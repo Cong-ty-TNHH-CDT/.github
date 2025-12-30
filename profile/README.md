@@ -1,12 +1,29 @@
-## Hi there 👋
+# 📌 Dev Rules & Git Flow
 
-<!--
+## Code
+- Code rõ ràng, dễ đọc, dễ maintain
+- Tên biến/hàm có nghĩa, không viết tắt khó hiểu
+- 1 hàm = 1 nhiệm vụ
+- Tránh hard-code, magic number
+- Logic game phức tạp phải comment (vì sao)
+- Không commit code lỗi / chưa test
 
-**Here are some ideas to get you started:**
+## Game & Asset
+- Asset đặt tên rõ ràng, có quy ước
+- Không commit asset rác, cache, file build, export
+- Kiểm tra asset trước khi merge
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+## Source Control
+❌ Không push thẳng `main`  
+❌ Không commit nhiều chức năng trong 1 commit  
+❌ Không commit secret, `.env`, key  
+
+✅ Mỗi task = 1 branch  
+✅ Mọi merge = Pull Request (có mô tả + cách test)
+
+## Git Flow
+- `main` → ổn định, release  
+- `develop` → phát triển  
+- `feature/*`, `fix/*`, `hotfix/*`
+
+Flow:
